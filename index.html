@@ -1,4 +1,4 @@
-CTYPE html>
+<CTYPE html>
 <html lang="en">
 
 <head>
@@ -9,14 +9,17 @@ CTYPE html>
 </head>
 <body>
 	<div class="header">
-		<h1>Crystal Collector</h1>
+		<h1>Rahul's Crystal Game</h1>
 	</div>
-	<div class="instructions">
+	<br>
+	<br>
+<div class="container" style="height:400px; width:800px;background: blue url('assets/images/background.png.jpeg')">
+	<div class="instructions" style="float:left; size=45%;">
 		<h3>Here's how you play the game</h3>
 		</br>
 		<ol>
 			<li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
-			<li>There are four crystals below.</li>
+			<li>There are four crystals in the game.</li>
 			<ul>
 				<li id="blue">Blue</li>
 				<li id="green">Green</li>
@@ -29,6 +32,12 @@ CTYPE html>
 			<li>The value of each crystal is hidden from you until you click on it.</li>
 			<li>Each time when the game starts, the game will change the values of each crystal.</li>
 		</ol>
+	</div>
+	<div class="gems" style="width:300px; float:right;">
+		<img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
+		<img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
+		<img src="assets/images/red.png" class=gemImage id= "three" alt="Red Gem">
+		<img src="assets/images/yellow.png" class=gemImage id= "four" alt="Yellow Gem">
 	</div>
 	<div class="numberToMatch">
 		<h2>Number To Get:
@@ -43,17 +52,12 @@ CTYPE html>
 			<span id= "numberLosses"></span>
 		</h2>
 	</div>
-	<div class="gems">
-		<img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
-		<img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
-		<img src="assets/images/red.png" class=gemImage id= "three" alt="Red Gem">
-		<img src="assets/images/yellow.png" class=gemImage id= "four" alt="Yellow Gem">
-	</div>
 	<div class="userTotal">
 		<h2>Your total score is:
 			<span id="finalTotal"></span>
 		</h2>
 	</div>
+</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 	<script type="text/javascript" src="assets/javascript/javascript.js"></script>
 </body>
